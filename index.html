@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apželdinimas Gargžduose ir Klaipėdos rajone | Vejos įrengimas, alpinariumai</title>
-<meta name="description" content="Apželdinimo paslaugos Gargžduose, Klaipėdoje ir Klaipėdos rajone: želdynų projektavimas ir priežiūra, vejos įrengimas, alpinariumai, dekoratyviniai baseinėliai, genėjimas. Skambinkite +370 607 83202.">
+<meta name="description" content="Apželdinimo paslaugos Gargžduose, Klaipėdoje ir Klaipėdos rajone: želdynų projektavimas ir priežiūra, vejos įrengimas, alpinariumai, dekoratyviniai baseinėliai, genėjimas, kapų apželdinimas. Skambinkite +370 607 83202.">
 <meta name="author" content="Apželdinimo paslaugos">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="KrUgIH6upiWr_dOaCoViI_mcTxqR-OFd30DkQuqD1ww">
@@ -72,18 +72,18 @@
       ],
       "employee": { "@type": "Person", "name": "Tomas", "telephone": "+37060783202" },
       "contactPoint": { "@type": "ContactPoint", "telephone": "+37060783202", "email": "tomas@apzeldinimas.info", "contactType": "customer service", "areaServed": "LT", "availableLanguage": "lt" },
-      "knowsAbout": ["Apželdinimas", "Aplinkos tvarkymas", "Želdynų projektavimas", "Vejos įrengimas", "Vejos priežiūra", "Alpinariumai", "Dekoratyviniai baseinai", "Genėjimas", "Gyvatvorės", "Augalų parinkimas"],
+      "knowsAbout": ["Apželdinimas", "Aplinkos tvarkymas", "Želdynų projektavimas", "Vejos įrengimas", "Vejos priežiūra", "Alpinariumai", "Dekoratyviniai baseinai", "Genėjimas", "Gyvatvorės", "Augalų parinkimas", "Kapų apželdinimas"],
       "sameAs": ["https://www.facebook.com/pages/Ap%C5%BEeldinimo-paslaugos/108668435836074"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Apželdinimo paslaugos",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Želdynų projektavimas ir priežiūra" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Želdynų projektavimas ir konsultacijos" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vejos įrengimas ir atnaujinimas" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alpinariumų formavimas" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dekoratyviniai baseinėliai" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medelių, gyvatvorių ir formuotų augalų genėjimas" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Augalų parinkimas ir konsultacijos" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Želdynų priežiūra ir genėjimas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kapų apželdinimas" } }
         ]
       }
     },
@@ -172,7 +172,10 @@ p { margin: 0; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 500; font-size: 20px; letter-spacing: -.03em; }
 .brand svg { width: 30px; height: 30px; flex: none; }
 .brand svg path { transform-box: fill-box; transform-origin: 50% 100%; }
-.brand:hover svg path { animation: sway 1.2s ease-in-out; }
+.motion .brand svg path { animation: wave 1.8s ease-in-out .5s; }
+.motion .brand:hover svg path, .brand:hover svg path { animation: sway 1.2s ease-in-out; }
+/* Two keyframe names on purpose: a changed animation-name is what restarts it on hover after the load wave. */
+@keyframes wave { 15% { transform: rotate(-14deg); } 35% { transform: rotate(10deg); } 55% { transform: rotate(-6deg); } 75% { transform: rotate(3deg); } }
 @keyframes sway { 25% { transform: rotate(-9deg); } 60% { transform: rotate(6deg); } }
 .nav { display: flex; gap: 32px; font-size: 15px; }
 .nav a { text-decoration: none; color: var(--ink-2); }
@@ -394,8 +397,8 @@ footer a:hover { text-decoration: underline; }
       <ul class="frame services">
         <li class="card service">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg></div>
-          <h3>Želdynų projektavimas ir priežiūra</h3>
-          <p>Suplanuojame želdynus pagal jūsų sklypą, poreikius ir biudžetą, o vėliau padedame juos prižiūrėti.</p>
+          <h3>Želdynų projektavimas ir konsultacijos</h3>
+          <p>Suplanuojame želdynus pagal jūsų sklypą ir biudžetą, patariame, kokie augalai tiks dirvožemiui, apšvietimui ir stiliui.</p>
         </li>
         <li class="card service">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M5 20v-4M8 20v-6M11 20v-3M14 20v-5M17 20v-4M20 20v-6"/></svg></div>
@@ -414,13 +417,13 @@ footer a:hover { text-decoration: underline; }
         </li>
         <li class="card service">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
-          <h3>Genėjimas</h3>
-          <p>Medelių, gyvatvorių ir formuotų augalų genėjimas, kad augalai būtų sveiki ir tvarkingi.</p>
+          <h3>Želdynų priežiūra ir genėjimas</h3>
+          <p>Prižiūrime želdynus, geniame medelius, gyvatvores ir formuotus augalus, kad jie būtų sveiki ir tvarkingi.</p>
         </li>
         <li class="card service">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M12 12C12 7 8 4 3 4c0 5 4 8 9 8Z"/><path d="M12 15c0-4 3-7 8-7 0 4-3 7-8 7Z"/></svg></div>
-          <h3>Augalų parinkimas ir konsultacijos</h3>
-          <p>Patarsime, kokie augalai tiks jūsų sklypo dirvožemiui, apšvietimui ir stiliui.</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-8"/><path d="M12 14c-3.5 0-5-2.5-5-6 1.8 0 3.6.8 5 2.4C13.4 8.8 15.2 8 17 8c0 3.5-1.5 6-5 6Z"/><path d="M12 10.4V5"/><path d="M8.5 22c0-2 1.5-3.5 3.5-3.5s3.5 1.5 3.5 3.5"/></svg></div>
+          <h3>Kapų apželdinimas</h3>
+          <p>Tvarkingas ir jaukus kapavietės apželdinimas: parenkame ir pasodiname augalus, kurie gražiai atrodo ištisus metus ir reikalauja nedaug priežiūros.</p>
         </li>
       </ul>
     </div>
@@ -431,7 +434,7 @@ footer a:hover { text-decoration: underline; }
       <h2 id="apie-title">Apželdinimas Gargžduose ir Klaipėdos rajone</h2>
       <div class="about-text">
         <p>Nuo 2008 m. kuriame ir prižiūrime žaliąsias erdves prie privačių namų, sodybų ir įmonių Gargžduose, Klaipėdoje bei visame Klaipėdos rajone.</p>
-        <p>Pasirūpiname viskuo – nuo želdynų projektavimo ir augalų parinkimo iki vejos įrengimo: atvežame juodžemį, sunaikiname piktžoles, sufrezuojame žemę, parenkame vejos sėklas ir patręšiame. Formuojame alpinariumus, įrengiame dekoratyvinius baseinėlius, geniame medelius, gyvatvores ir formuotus augalus.</p>
+        <p>Pasirūpiname viskuo – nuo želdynų projektavimo ir augalų parinkimo iki vejos įrengimo: atvežame juodžemį, sunaikiname piktžoles, sufrezuojame žemę, parenkame vejos sėklas ir patręšiame. Formuojame alpinariumus, įrengiame dekoratyvinius baseinėlius, geniame medelius, gyvatvores ir formuotus augalus, apželdiname kapus.</p>
         <p>Kiekvieną sklypą vertiname individualiai, todėl patarsime, kokie sprendimai ir augalai tiks būtent jūsų aplinkai. Dėl aplinkos tvarkymo ir apželdinimo darbų kreipkitės į Tomą telefonu <a href="tel:+37060783202">+370 607 83202</a>.</p>
       </div>
     </div>
