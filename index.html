@@ -8,7 +8,7 @@
 <meta name="author" content="Apželdinimo paslaugos">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="KrUgIH6upiWr_dOaCoViI_mcTxqR-OFd30DkQuqD1ww">
-<meta name="theme-color" content="#f6f5f1">
+<meta name="theme-color" content="#f5f7f1">
 <meta name="geo.region" content="LT-KL">
 <meta name="geo.placename" content="Gargždai">
 <meta name="geo.position" content="55.7128;21.3957">
@@ -28,12 +28,14 @@
 <meta property="og:image:alt" content="Apželdintas sklypas su veja, tujomis ir gėlynais">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.ico" sizes="16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
-<link rel="preload" as="image" href="images/gallery/003.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="images/gallery/apzeldinimas-1.jpg" fetchpriority="high">
 
 <script type="application/ld+json">
 {
@@ -45,8 +47,13 @@
       "name": "Apželdinimo paslaugos",
       "description": "Apželdinimo paslaugos Gargžduose, Klaipėdoje ir Klaipėdos rajone: želdynų projektavimas ir priežiūra, vejos įrengimas, alpinariumų formavimas, dekoratyviniai baseinėliai, genėjimas, augalų parinkimas ir konsultacijos.",
       "url": "https://apzeldinimas.info/",
-      "image": "https://apzeldinimas.info/images/og-image.jpg",
-      "logo": "https://apzeldinimas.info/favicon.svg",
+      "image": [
+        "https://apzeldinimas.info/images/og-image.jpg",
+        "https://apzeldinimas.info/images/gallery/alpinariumas-1.jpg",
+        "https://apzeldinimas.info/images/gallery/apzeldinimas-3.jpg",
+        "https://apzeldinimas.info/images/gallery/dekoratyvinis-baseinelis-1.jpg"
+      ],
+      "logo": "https://apzeldinimas.info/icon-512.png",
       "telephone": "+37060783202",
       "email": "tomas@apzeldinimas.info",
       "foundingDate": "2008",
@@ -64,6 +71,8 @@
         { "@type": "AdministrativeArea", "name": "Klaipėdos rajonas" }
       ],
       "employee": { "@type": "Person", "name": "Tomas", "telephone": "+37060783202" },
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+37060783202", "email": "tomas@apzeldinimas.info", "contactType": "customer service", "areaServed": "LT", "availableLanguage": "lt" },
+      "knowsAbout": ["Apželdinimas", "Aplinkos tvarkymas", "Želdynų projektavimas", "Vejos įrengimas", "Vejos priežiūra", "Alpinariumai", "Dekoratyviniai baseinai", "Genėjimas", "Gyvatvorės", "Augalų parinkimas"],
       "sameAs": ["https://www.facebook.com/pages/Ap%C5%BEeldinimo-paslaugos/108668435836074"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -106,22 +115,21 @@
 }
 </script>
 
+<script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');</script>
 <style>
 :root {
-  --bg: #f6f5f1;
-  --frame: #ebe8e1;
+  --bg: #f5f7f1;
+  --frame: #e5ecdd;
   --surface: #ffffff;
   --ink: #0f1411;
   --ink-2: #2a302c;
   --muted: #6c716d;
-  --line: #e4e1da;
-  --brand: #2f7a4b;
-  --brand-ink: #1c4a2e;
-  --mint: #dcf2e2;
-  --peach: #fbe5d5;
-  --lilac: #ece4f8;
-  --sky: #daf1f3;
-  --butter: #f6efcd;
+  --line: #dde5d4;
+  --brand: #3d8b57;
+  --forest: #163a27;
+  --forest-2: #1f4a33;
+  --mint: #dcefd9;
+  --mint-2: #c9e6c4;
   --r-frame: 28px;
   --r-card: 20px;
   --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -143,13 +151,13 @@ p { margin: 0; }
 .btn .arr { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; transition: transform .25s; }
 .btn .arr svg { width: 16px; height: 16px; }
 .btn:hover .arr { transform: translateX(3px); }
-.btn-dark { background: var(--ink); color: #fff; }
-.btn-dark .arr { background: #fff; color: var(--ink); }
-.btn-dark:hover { background: #26302a; }
+.btn-dark { background: var(--forest); color: #fff; }
+.btn-dark .arr { background: var(--mint); color: var(--forest); }
+.btn-dark:hover { background: var(--forest-2); }
 .btn-light { background: #fff; color: var(--ink); }
-.btn-light .arr { background: var(--ink); color: #fff; }
+.btn-light .arr { background: var(--forest); color: #fff; }
 .btn-outline { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); padding: 0 22px; }
-.btn-outline:hover { background: var(--surface); }
+.btn-outline:hover { background: var(--mint); }
 .btn-sm { min-height: 40px; font-size: 15px; padding: 5px 5px 5px 16px; gap: 10px; }
 .btn-sm .arr { width: 28px; height: 28px; }
 
@@ -158,11 +166,14 @@ p { margin: 0; }
 .card { background: var(--surface); border-radius: var(--r-card); }
 
 /* Header */
-.site-header { position: sticky; top: 0; z-index: 50; background: rgba(246,245,241,.85); backdrop-filter: saturate(160%) blur(12px); border-bottom: 1px solid transparent; transition: border-color .2s; }
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(245,247,241,.85); backdrop-filter: saturate(160%) blur(12px); border-bottom: 1px solid transparent; transition: border-color .2s; }
 .site-header.scrolled { border-color: var(--line); }
 .site-header .wrap { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 68px; gap: 16px; width: min(1280px, 100% - 32px); }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 500; font-size: 20px; letter-spacing: -.03em; }
 .brand svg { width: 30px; height: 30px; flex: none; }
+.brand svg path { transform-box: fill-box; transform-origin: 50% 100%; }
+.brand:hover svg path { animation: sway 1.2s ease-in-out; }
+@keyframes sway { 25% { transform: rotate(-9deg); } 60% { transform: rotate(6deg); } }
 .nav { display: flex; gap: 32px; font-size: 15px; }
 .nav a { text-decoration: none; color: var(--ink-2); }
 .nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
@@ -170,13 +181,16 @@ p { margin: 0; }
 .header-cta .btn { background: #fff; box-shadow: inset 0 0 0 1px var(--line); }
 
 /* Hero */
-.hero { padding: 72px 0 40px; text-align: center; }
+.hero { position: relative; isolation: isolate; padding: 72px 0 40px; text-align: center; }
+.hero::before { content: ""; position: absolute; inset: 0 0 auto; height: 560px; z-index: -1; background: radial-gradient(70% 420px at 50% 0, var(--mint) 0%, rgba(220,239,217,0) 100%); transform-origin: 50% 0; animation: breathe 9s ease-in-out infinite; pointer-events: none; }
+@keyframes breathe { 50% { transform: scale(1.12, 1.18); opacity: .75; } }
+.hero h1 em { font-style: normal; color: var(--brand); }
 .hero h1 { font-size: clamp(42px, 7.4vw, 84px); margin: 0 auto; max-width: 15ch; }
 .hero .lead { margin: 22px auto 0; font-size: clamp(18px, 2vw, 21px); line-height: 1.5; color: var(--muted); max-width: 36em; letter-spacing: -.01em; }
 .hero .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 34px; }
 .mosaic { margin-top: 56px; display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 8px; }
 .mosaic img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--r-card); }
-.mosaic .main { aspect-ratio: 4/3; position: relative; }
+.mosaic .main { aspect-ratio: 4/3; position: relative; overflow: hidden; border-radius: var(--r-card); }
 .mosaic .side { display: grid; gap: 8px; grid-template-rows: 1fr 1fr; height: 0; min-height: 100%; }
 .mosaic .side img { min-height: 0; }
 .mosaic .tag { position: absolute; left: 16px; bottom: 16px; display: flex; gap: 10px; align-items: center; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); padding: 10px 16px 10px 12px; border-radius: 14px; font-size: 14px; text-align: left; line-height: 1.3; }
@@ -192,21 +206,21 @@ section { scroll-margin-top: 80px; }
 
 /* Services */
 .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; list-style: none; margin: 0; }
-.service { padding: 28px 26px 30px; transition: box-shadow .25s; }
-.service:hover { box-shadow: 0 10px 30px rgba(15,20,17,.07); }
-.ico { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 40px; color: var(--ink-2); }
+.service { padding: 28px 26px 30px; transition: box-shadow .3s, transform .3s; }
+.service:hover { box-shadow: 0 14px 34px rgba(22,58,39,.10); transform: translateY(-4px); }
+.service:hover .ico { transform: rotate(-10deg) scale(1.08); background: var(--mint-2); }
+.ico { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 40px; color: var(--forest); background: var(--mint); transition: transform .35s cubic-bezier(.3,1.6,.5,1), background .3s; }
 .ico svg { width: 22px; height: 22px; }
 .service h3 { font-size: 22px; letter-spacing: -.025em; line-height: 1.2; margin-bottom: 10px; }
 .service p { color: var(--muted); font-size: 16px; line-height: 1.55; }
-.t-mint { background: var(--mint); } .t-peach { background: var(--peach); } .t-lilac { background: var(--lilac); }
-.t-sky { background: var(--sky); } .t-butter { background: var(--butter); }
+.t-mint { background: var(--mint); }
 
 /* Gallery */
 .filters { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 4px; padding: 5px; border-radius: 999px; background: var(--frame); }
 .filters-wrap { display: flex; justify-content: center; margin-bottom: 28px; }
 .filters button { font: 500 15px/1 var(--font); padding: 11px 18px; border-radius: 999px; border: 0; background: transparent; color: var(--muted); cursor: pointer; transition: background .2s, color .2s; }
 .filters button:hover { color: var(--ink); }
-.filters button[aria-pressed="true"] { background: #fff; color: var(--ink); box-shadow: 0 1px 3px rgba(15,20,17,.1); }
+.filters button[aria-pressed="true"] { background: #fff; color: var(--forest); box-shadow: 0 1px 3px rgba(15,20,17,.1); }
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; list-style: none; margin: 0; }
 .gallery li { animation: fadeIn .35s ease both; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } }
@@ -236,11 +250,15 @@ section { scroll-margin-top: 80px; }
 /* Process */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; list-style: none; margin: 0; counter-reset: s; }
 .step { padding: 26px 24px 28px; counter-increment: s; }
-.step::before { content: counter(s); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 15px; font-weight: 500; margin-bottom: 36px; }
+.step::before { content: counter(s); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--mint); color: var(--forest); font-size: 15px; font-weight: 600; margin-bottom: 36px; }
 .step h3 { font-size: 21px; letter-spacing: -.02em; margin-bottom: 8px; }
 .step p { color: var(--muted); font-size: 16px; line-height: 1.55; }
 
 /* FAQ */
+.about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
+.about h2 { font-size: clamp(32px, 4.2vw, 48px); }
+.about-text { display: grid; gap: 16px; color: var(--ink-2); font-size: 18px; line-height: 1.65; }
+.about-text p:first-child { font-size: 20px; color: var(--ink); letter-spacing: -.01em; }
 .faq { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start; }
 .faq-intro h2 { font-size: clamp(34px, 4.4vw, 50px); }
 .faq-intro p { margin: 18px 0 28px; color: var(--muted); font-size: 18px; line-height: 1.5; }
@@ -248,23 +266,23 @@ section { scroll-margin-top: 80px; }
 .faq-list details { padding: 0 24px; }
 .faq-list summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-weight: 500; font-size: 17px; letter-spacing: -.01em; }
 .faq-list summary::-webkit-details-marker { display: none; }
-.faq-list summary::after { content: ""; flex: none; width: 14px; height: 14px; background: linear-gradient(currentColor, currentColor) center / 14px 1.5px no-repeat, linear-gradient(currentColor, currentColor) center / 1.5px 14px no-repeat; color: var(--muted); transition: transform .25s; }
+.faq-list summary::after { content: ""; flex: none; width: 14px; height: 14px; background: linear-gradient(currentColor, currentColor) center / 14px 1.5px no-repeat, linear-gradient(currentColor, currentColor) center / 1.5px 14px no-repeat; color: var(--brand); transition: transform .25s; }
 .faq-list details[open] summary::after { transform: rotate(45deg); }
 .faq-list details p { padding: 0 32px 22px 0; color: var(--muted); font-size: 16px; line-height: 1.6; }
 
 /* Contact */
-.contact { background: var(--ink); color: #c9cfca; border-radius: 36px; padding: clamp(32px, 6vw, 72px); display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.contact { background: var(--forest); color: #cfdccf; border-radius: 36px; padding: clamp(32px, 6vw, 72px); display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .contact h2 { color: #fff; font-size: clamp(36px, 5vw, 60px); }
-.contact .sub { margin: 18px 0 32px; font-size: 18px; line-height: 1.5; color: #a9b1ab; max-width: 28em; }
+.contact .sub { margin: 18px 0 32px; font-size: 18px; line-height: 1.5; color: #b3c6b5; max-width: 28em; }
 .contact .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .contact .btn-outline { color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,.35); }
 .contact .btn-outline:hover { background: rgba(255,255,255,.08); }
 .clist { display: grid; gap: 8px; font-style: normal; }
 .citem { display: flex; gap: 16px; align-items: center; padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,.06); text-decoration: none; transition: background .2s; }
 a.citem:hover { background: rgba(255,255,255,.11); }
-.citem .ci { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; flex: none; color: var(--ink); }
+.citem .ci { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; flex: none; color: var(--forest); }
 .citem .ci svg { width: 20px; height: 20px; }
-.citem small { display: block; font-size: 13px; color: #8f9891; }
+.citem small { display: block; font-size: 13px; color: #98b19c; }
 .citem span { font-size: 18px; font-weight: 500; color: #fff; word-break: break-word; letter-spacing: -.01em; }
 
 footer { padding: 36px 0 44px; font-size: 14px; color: var(--muted); }
@@ -279,7 +297,8 @@ footer a:hover { text-decoration: underline; }
   .nav { display: none; }
   .services, .steps { grid-template-columns: repeat(2, 1fr); }
   .gallery { grid-template-columns: repeat(3, 1fr); }
-  .faq, .contact { grid-template-columns: 1fr; }
+  .faq, .contact, .about { grid-template-columns: 1fr; }
+  .about { gap: 24px; }
   .faq { gap: 32px; }
 }
 @media (max-width: 680px) {
@@ -300,6 +319,16 @@ footer a:hover { text-decoration: underline; }
   .mobile-call { display: flex; position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 60; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
   footer { padding-bottom: 100px; }
 }
+/* Motion: only when JS added .motion (i.e. user has not asked for reduced motion) */
+.motion .hero h1, .motion .hero .lead, .motion .hero .actions, .motion .mosaic { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+.motion .hero .lead { animation-delay: .12s; }
+.motion .hero .actions { animation-delay: .24s; }
+.motion .mosaic { animation-delay: .38s; }
+.motion .mosaic .main img { animation: settle 2.4s cubic-bezier(.2,.7,.2,1) .38s both; }
+@keyframes rise { from { opacity: 0; transform: translateY(28px); } }
+@keyframes settle { from { transform: scale(1.12); } }
+.motion .reveal { opacity: 0; transform: translateY(32px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); transition-delay: var(--d, 0ms); }
+.motion .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
@@ -312,7 +341,7 @@ footer a:hover { text-decoration: underline; }
 <header class="site-header" id="top">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Apželdinimo paslaugos – pradžia">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="10" fill="#0f1411"/><path d="M16 25V14m0 4c-4 0-7-3-7-8 5 0 7 3 7 8Zm0-3c0-5 3-8 8-8 0 5-3 8-8 8Z" fill="none" stroke="#9be0b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="10" fill="#163a27"/><path d="M16 25V14m0 4c-4 0-7-3-7-8 5 0 7 3 7 8Zm0-3c0-5 3-8 8-8 0 5-3 8-8 8Z" fill="none" stroke="#9be0b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       apželdinimas
     </a>
     <nav class="nav" aria-label="Pagrindinė navigacija">
@@ -332,7 +361,7 @@ footer a:hover { text-decoration: underline; }
 <main>
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
-      <h1 id="hero-title">Apželdiname aplinką, kurioje gera gyventi</h1>
+      <h1 id="hero-title">Apželdiname aplinką, kurioje <em>gera gyventi</em></h1>
       <p class="lead">Gargžduose, Klaipėdoje ir Klaipėdos rajone projektuojame ir prižiūrime želdynus, įrengiame vejas, formuojame alpinariumus ir dekoratyvinius baseinėlius. Padėsime parinkti augalus, tinkančius būtent jūsų sklypui.</p>
       <div class="actions">
         <a class="btn btn-dark" href="tel:+37060783202">+370 607 83202
@@ -342,15 +371,15 @@ footer a:hover { text-decoration: underline; }
       </div>
       <div class="frame mosaic">
         <div class="main">
-          <img src="images/gallery/003.jpg" width="640" height="480" alt="Apželdintas namo kiemas: veja, tujų gyvatvorė ir gėlynai" fetchpriority="high">
+          <img src="images/gallery/apzeldinimas-1.jpg" width="640" height="480" alt="Apželdintas namo kiemas: veja, tujų gyvatvorė ir gėlynai" fetchpriority="high">
           <div class="tag">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2C20 17.5 12 22 12 22Z"/><circle cx="12" cy="10" r="3"/></svg>
             <div><b>Gargždai</b>Klaipėdos rajonas</div>
           </div>
         </div>
         <div class="side">
-          <img src="images/gallery/001.jpg" width="640" height="480" alt="Alpinariumas su formuotomis pušimis ir mulčiu">
-          <img src="images/gallery/014.jpg" width="640" height="480" alt="Gėlynas su akmenukais ir veja prie namo">
+          <img src="images/gallery/alpinariumas-1.jpg" width="640" height="480" alt="Alpinariumas su formuotomis pušimis ir mulčiu">
+          <img src="images/gallery/apzeldinimas-3.jpg" width="640" height="480" alt="Gėlynas su akmenukais ir veja prie namo">
         </div>
       </div>
     </div>
@@ -364,36 +393,47 @@ footer a:hover { text-decoration: underline; }
       </div>
       <ul class="frame services">
         <li class="card service">
-          <div class="ico t-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg></div>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg></div>
           <h3>Želdynų projektavimas ir priežiūra</h3>
           <p>Suplanuojame želdynus pagal jūsų sklypą, poreikius ir biudžetą, o vėliau padedame juos prižiūrėti.</p>
         </li>
         <li class="card service">
-          <div class="ico t-butter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M5 20v-4M8 20v-6M11 20v-3M14 20v-5M17 20v-4M20 20v-6"/></svg></div>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M5 20v-4M8 20v-6M11 20v-3M14 20v-5M17 20v-4M20 20v-6"/></svg></div>
           <h3>Vejos įrengimas ir atnaujinimas</h3>
           <p>Juodžemio atvežimas, piktžolių naikinimas, žemės frezavimas, vejos sėklų parinkimas ir tręšimas.</p>
         </li>
         <li class="card service">
-          <div class="ico t-peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6-10 4 6 3-4 5 8Z"/><circle cx="17" cy="6" r="2"/></svg></div>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 6-10 4 6 3-4 5 8Z"/><circle cx="17" cy="6" r="2"/></svg></div>
           <h3>Alpinariumų formavimas</h3>
           <p>Akmenų ir augalų kompozicijos, kurios atrodo natūraliai ir reikalauja nedaug priežiūros.</p>
         </li>
         <li class="card service">
-          <div class="ico t-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 7c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg></div>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 7c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg></div>
           <h3>Dekoratyviniai baseinėliai</h3>
           <p>Vandens telkiniai, kurie suteikia sodui ramybės ir tampa kiemo akcentu.</p>
         </li>
         <li class="card service">
-          <div class="ico t-lilac"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
           <h3>Genėjimas</h3>
           <p>Medelių, gyvatvorių ir formuotų augalų genėjimas, kad augalai būtų sveiki ir tvarkingi.</p>
         </li>
         <li class="card service">
-          <div class="ico t-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M12 12C12 7 8 4 3 4c0 5 4 8 9 8Z"/><path d="M12 15c0-4 3-7 8-7 0 4-3 7-8 7Z"/></svg></div>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M12 12C12 7 8 4 3 4c0 5 4 8 9 8Z"/><path d="M12 15c0-4 3-7 8-7 0 4-3 7-8 7Z"/></svg></div>
           <h3>Augalų parinkimas ir konsultacijos</h3>
           <p>Patarsime, kokie augalai tiks jūsų sklypo dirvožemiui, apšvietimui ir stiliui.</p>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <section class="section" id="apie" aria-labelledby="apie-title" style="padding-top:0">
+    <div class="wrap about">
+      <h2 id="apie-title">Apželdinimas Gargžduose ir Klaipėdos rajone</h2>
+      <div class="about-text">
+        <p>Nuo 2008 m. kuriame ir prižiūrime žaliąsias erdves prie privačių namų, sodybų ir įmonių Gargžduose, Klaipėdoje bei visame Klaipėdos rajone.</p>
+        <p>Pasirūpiname viskuo – nuo želdynų projektavimo ir augalų parinkimo iki vejos įrengimo: atvežame juodžemį, sunaikiname piktžoles, sufrezuojame žemę, parenkame vejos sėklas ir patręšiame. Formuojame alpinariumus, įrengiame dekoratyvinius baseinėlius, geniame medelius, gyvatvores ir formuotus augalus.</p>
+        <p>Kiekvieną sklypą vertiname individualiai, todėl patarsime, kokie sprendimai ir augalai tiks būtent jūsų aplinkai. Dėl aplinkos tvarkymo ir apželdinimo darbų kreipkitės į Tomą telefonu <a href="tel:+37060783202">+370 607 83202</a>.</p>
+      </div>
     </div>
   </section>
 
@@ -413,30 +453,30 @@ footer a:hover { text-decoration: underline; }
         </div>
       </div>
       <ul class="frame gallery" id="gallery">
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/001.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumas su formuotomis pušimis ir mulčiu"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/002.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo įrengimas prie namo"></button></li>
-        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/011.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Apželdinta erdvė prie namo su skalda ir dekoratyviniais augalais"></button></li>
-        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/014.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Gėlynas su akmenukais ir veja prie namo"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/004.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumas Gargžduose"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/005.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo kompozicija su augalais"></button></li>
-        <li data-cat="baseinas"><button type="button"><img src="images/gallery/009.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis baseinėlis sode"></button></li>
-        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/003.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Apželdintas kiemas su tujų gyvatvore"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/006.jpg" width="450" height="600" loading="lazy" decoding="async" alt="Alpinariumas su spygliuočiais"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/007.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo įrengimas Klaipėdos rajone"></button></li>
-        <li data-cat="baseinas"><button type="button"><img src="images/gallery/010.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis vandens baseinėlis"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/008.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Akmenų ir augalų alpinariumas"></button></li>
-        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/015.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Aplinkos apželdinimas prie namo"></button></li>
-        <li data-cat="baseinas"><button type="button"><img src="images/gallery/012.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis baseinėlis su augalais"></button></li>
-        <li data-cat="baseinas"><button type="button"><img src="images/gallery/013.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinio baseinėlio įrengimas"></button></li>
-        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/016.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Apželdinimo darbai kieme"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/017.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumas su dekoratyviniais augalais"></button></li>
-        <li data-cat="baseinas"><button type="button"><img src="images/gallery/018.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis baseinas sodyboje"></button></li>
-        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/019.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo formavimas"></button></li>
-        <li data-cat="veja"><button type="button"><img src="images/gallery/020.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Įrengta veja prie namo"></button></li>
-        <li data-cat="veja"><button type="button"><img src="images/gallery/021.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Sužėlusi nauja veja"></button></li>
-        <li data-cat="veja"><button type="button"><img src="images/gallery/022.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Vejos įrengimas sklype"></button></li>
-        <li data-cat="veja"><button type="button"><img src="images/gallery/023.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Vejos priežiūra"></button></li>
-        <li data-cat="veja"><button type="button"><img src="images/gallery/024.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Vejos įrengimas: paruoštas ir pasėtas plotas"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumas su formuotomis pušimis ir mulčiu"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-2.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo įrengimas prie namo"></button></li>
+        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/apzeldinimas-2.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Apželdinta erdvė prie namo su skalda ir dekoratyviniais augalais"></button></li>
+        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/apzeldinimas-3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Gėlynas su akmenukais ir veja prie namo"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumas Gargžduose"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-4.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo kompozicija su augalais"></button></li>
+        <li data-cat="baseinas"><button type="button"><img src="images/gallery/dekoratyvinis-baseinelis-1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis baseinėlis sode"></button></li>
+        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/apzeldinimas-1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Apželdintas kiemas su tujų gyvatvore"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-5.jpg" width="450" height="600" loading="lazy" decoding="async" alt="Alpinariumas su spygliuočiais"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-6.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo įrengimas Klaipėdos rajone"></button></li>
+        <li data-cat="baseinas"><button type="button"><img src="images/gallery/dekoratyvinis-baseinelis-2.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis vandens baseinėlis"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-7.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Akmenų ir augalų alpinariumas"></button></li>
+        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/apzeldinimas-4.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Aplinkos apželdinimas prie namo"></button></li>
+        <li data-cat="baseinas"><button type="button"><img src="images/gallery/dekoratyvinis-baseinelis-3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis baseinėlis su augalais"></button></li>
+        <li data-cat="baseinas"><button type="button"><img src="images/gallery/dekoratyvinis-baseinelis-4.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinio baseinėlio įrengimas"></button></li>
+        <li data-cat="apzeldinimas"><button type="button"><img src="images/gallery/apzeldinimas-5.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Apželdinimo darbai kieme"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-8.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumas su dekoratyviniais augalais"></button></li>
+        <li data-cat="baseinas"><button type="button"><img src="images/gallery/dekoratyvinis-baseinelis-5.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Dekoratyvinis baseinas sodyboje"></button></li>
+        <li data-cat="alpinariumas"><button type="button"><img src="images/gallery/alpinariumas-9.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Alpinariumo formavimas"></button></li>
+        <li data-cat="veja"><button type="button"><img src="images/gallery/vejos-irengimas-1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Įrengta veja prie namo"></button></li>
+        <li data-cat="veja"><button type="button"><img src="images/gallery/vejos-irengimas-2.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Sužėlusi nauja veja"></button></li>
+        <li data-cat="veja"><button type="button"><img src="images/gallery/vejos-irengimas-3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Vejos įrengimas sklype"></button></li>
+        <li data-cat="veja"><button type="button"><img src="images/gallery/vejos-irengimas-4.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Vejos priežiūra"></button></li>
+        <li data-cat="veja"><button type="button"><img src="images/gallery/vejos-irengimas-5.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Vejos įrengimas: paruoštas ir pasėtas plotas"></button></li>
       </ul>
       <div class="gallery-more" id="gallery-more">
         <button class="btn btn-outline" type="button">Rodyti visas nuotraukas</button>
@@ -510,15 +550,15 @@ footer a:hover { text-decoration: underline; }
             <div><small>Tomas, telefonas</small><span>+370 607 83202</span></div>
           </a>
           <a class="citem" href="mailto:tomas@apzeldinimas.info">
-            <span class="ci t-peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+            <span class="ci t-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
             <div><small>El. paštas</small><span>tomas@apzeldinimas.info</span></div>
           </a>
           <div class="citem">
-            <span class="ci t-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2C20 17.5 12 22 12 22Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="ci t-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2C20 17.5 12 22 12 22Z"/><circle cx="12" cy="10" r="3"/></svg></span>
             <div><small>Vieta</small><span>Gargždai, Klaipėdos rajonas</span></div>
           </div>
           <a class="citem" href="https://www.facebook.com/pages/Ap%C5%BEeldinimo-paslaugos/108668435836074" target="_blank" rel="noopener">
-            <span class="ci t-lilac"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8Z"/></svg></span>
+            <span class="ci t-mint"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8Z"/></svg></span>
             <div><small>Facebook</small><span>Apželdinimo paslaugos</span></div>
           </a>
         </address>
@@ -552,6 +592,30 @@ footer a:hover { text-decoration: underline; }
 
   var header = document.querySelector('.site-header');
   addEventListener('scroll', function () { header.classList.toggle('scrolled', scrollY > 8); }, { passive: true });
+
+  // Scroll reveal: fade sections and cards in as they enter the viewport, staggered per group.
+  var revealSel = '.head, .about h2, .about-text, .services > li, .filters-wrap, #gallery, .gallery-more, .steps > li, .faq-intro, .faq-list > details, .contact';
+  var reveal = Array.prototype.slice.call(document.querySelectorAll(revealSel));
+  if (document.documentElement.classList.contains('motion') && 'IntersectionObserver' in window) {
+    reveal.forEach(function (el) {
+      var siblings = Array.prototype.filter.call(el.parentNode.children, function (c) { return c.matches(revealSel); });
+      el.style.setProperty('--d', Math.min(siblings.indexOf(el), 5) * 90 + 'ms');
+      el.classList.add('reveal');
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        el.classList.add('in');
+        io.unobserve(el);
+        // Drop the reveal styles once done so hover transitions work normally again.
+        el.addEventListener('transitionend', function () { el.classList.remove('reveal', 'in'); }, { once: true });
+      });
+    }, { rootMargin: '0px 0px -60px 0px', threshold: 0.12 });
+    reveal.forEach(function (el) { io.observe(el); });
+  } else {
+    document.documentElement.classList.remove('motion');
+  }
 
   var LIMIT = 8, filter = 'all', expanded = false;
   var items = Array.prototype.slice.call(document.querySelectorAll('#gallery li'));
